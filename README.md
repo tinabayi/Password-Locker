@@ -20,7 +20,7 @@ BDD
 ### Contact information
 ~~~
 My number +250784463499
-Project link:
+Project link:https://github.com/tinabayi/password-locker
 ~~~
 ### License and Copyright information
 ~~~
