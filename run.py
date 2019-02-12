@@ -24,6 +24,38 @@ def display_users():
     '''
     return User.display_users()
 
+def create_credentials(website_name,username,password):
+    '''
+    Function to create a new credential
+    '''
+    new_credential = Credential(website_name,username,password)
+    return new_credential
+
+
+def save_credentials(credential):
+    '''
+    Function to save credential
+    '''
+    credential.save_credentials()
+
+def check_existing_credentials(website_name):
+    '''
+    Function that check if a credential exists with that website_name and return a Boolean
+    '''
+    return Credential.credential_exist(websit_name)
+def del_credential(credential):
+    '''
+    Function to delete a credential
+    '''
+    credential.delete_credential() 
+
+
+def display_credentials():
+    '''
+    Function that returns all the saved credentials
+    '''
+    return Credential.display_credentials()
+
 def main():
 
     print("Hello Welcome . What is your first_name?")
