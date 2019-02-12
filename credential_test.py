@@ -32,18 +32,37 @@ class TestCredential(unittest.TestCase):
         '''
         self.new_credential.save_credential() # saving the new credential
         self.assertEqual(len(Credential.credential_list),1)
-def test_save_multiple_credential(self):
+
+    def tearDown(self):
+            '''
+            tearDown method that does clean up after each test case has run.
+            '''
+            Credential.credential_list = []
+
+
+    def test_save_multiple_credential(self):
             '''
             test_save_multiple_credential to check if we can save multiple credential
-            objects to our contact_list
+            objects to our credential_list
             '''
-            self.new_contact.save_contact()
-            test_contact = Contact("Test","user","0712345678","test@user.com") # new contact
-            test_contact.save_contact()
-            self.assertEqual(len(Contact.contact_list),2)
+            self.new_credential.save_credential()
+            test_credential = Credential("yahoo.com","bayizerechristine","Kansangire81") # new credential
+            test_credential.save_credential()
+            self.assertEqual(len(Credential.credential_list),2)
 
 
-    
+    def test_contact_exists(self):
+        '''
+        test to check if we can return a Boolean  if we cannot find the contact.
+        '''
+
+        self.new_contact.save_contact()
+        test_contact = Contact("Test","user","0711223344","test@user.com") # new contact
+        test_contact.save_contact()
+
+        contact_exists = Contact.contact_exist("0711223344")
+
+        self.assertTrue(contact_exis
 
 
 if __name__ == '__main__':
