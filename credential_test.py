@@ -51,19 +51,18 @@ class TestCredential(unittest.TestCase):
             self.assertEqual(len(Credential.credential_list),2)
 
 
-    def test_contact_exists(self):
+    def test_credential_exist(self):
         '''
         test to check if we can return a Boolean  if we cannot find the contact.
         '''
 
-        self.new_contact.save_contact()
-        test_contact = Contact("Test","user","0711223344","test@user.com") # new contact
-        test_contact.save_contact()
+        self.new_credential.save_credential()
+        test_credential = Credential("facebook.com","bayizerechristine4","wecode2019kie") # new credential
+        test_credential.save_credential()
 
-        contact_exists = Contact.contact_exist("0711223344")
+        credential_exist = Credential.credential_exists("facebook.com")
 
-        self.assertTrue(contact_exis
-
+        self.assertTrue(credential_exist)
 
 if __name__ == '__main__':
     unittest.main()

@@ -22,3 +22,18 @@ class Credential:
         '''
 
         Credential.credential_list.append(self)
+
+    @classmethod
+    def credential_exists(cls,website_name):
+        '''
+        Method that checks if a credential exists from the credential list.
+        Args:
+            website_name: website_name to search if it exists
+        Returns :
+            Boolean: True or false depending if the credential exists
+        '''
+        for credential in cls.credential_list:
+            if credential.website_name == website_name:
+                    return True
+
+        return False
