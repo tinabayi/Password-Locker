@@ -80,39 +80,39 @@ def main():
                 print(f"New User {first_name} {last_name}{username} {password} created")
                 print ('\n')
 
-        elif short_code == 'dc':
+        # elif short_code == 'dc':
 
-            if display_credentials():
-                print("Here is a list of all your credentials")
-                print('\n')
+        #     if  display_credentials():
+        #         print("Here is a list of all your credentials")
+        #         print('\n')
 
-            for credential in return_credentials():
-                print(f"{credential.username} {credential.password}")
+        #     for credential in return_credentials():
+        #         print(f"{credential.username} {credential.password}")
 
-                print('\n')
-            else:
-                print('\n')
-                print("You dont seem to have any credentials saved yet")
-                print('\n')
+        #         print('\n')
+        #     else:
+        #         print('\n')
+        #         print("You dont seem to have any credentials saved yet")
+        #         print('\n')
 
         elif short_code == 'ff':
-            print("Enter the website_name")
-            website_name = input()
-            if check_existing_credentials(website_name):
-                search_credential = find_credential(website_name)
-                print(f"{search_credential.username} {search_credential.password}")
-                print('-' * 20)
+            
+              print("username")
 
-                                   
-            else:
-                print("That credential does not exist")
+              website_name = input()
+        if check_existing_credentials(username):
+               search_credential = find_credential(username)
+               print(f"{search_credential.username} {search_credential.password}")
+               print('-' * 20)
+         
+        else:
+            print("That credential does not exist")
 
         elif short_code == "ex":
-            print("Bye .......")
-            break
-        else:
-            print("I really didn't get that. Please use the short codes")
-
+               print("Bye .......")
+                 break
+            else:
+               print("I really didn't get that. Please use the short codes")
    
 if __name__ == '__main__':
 
