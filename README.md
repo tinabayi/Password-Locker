@@ -10,7 +10,10 @@ BAYIZERE Christine
 ~~~
 BDD
 
-
+| Behavior                                                                                                                                                                                                        | user input                                 | user output |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------|-------------|
+| the application has a prompt to the user where the application ask a user to enter his first name,his last name,his username,his password and in case  those data are putted those are saved by the application | .first name .last name .password .username |             |
+|                                                                                                                                                                                                                 |                                            |             |
 
 ~~~
 ### Technology used
