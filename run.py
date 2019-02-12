@@ -1,5 +1,6 @@
 #!/usr/bin/env python3.6
 from user import User
+from credentials import Credential
 def create_user(first_name,last_name,username,password):
     '''
     Function to create a new user
@@ -54,7 +55,7 @@ def display_credentials():
     '''
     Function that returns all the saved credentials
     '''
-    return credential.display_credentials()
+    return Credential.display_credentials()
 
 def main():
 
@@ -64,7 +65,7 @@ def main():
     # last_name=input()
 
     while True:
-        print("Use these short codes : cc - create a new user, dc - display credentias, ff -find a credential, ex -exit the credential list ")
+        print("Use these short codes : cc - create a new user, dc - display credentias, fd -find a credential, ex -exit the credential list ")
         short_code = input().lower()
         if short_code == 'cc':
                 print ("First name ....")
@@ -80,22 +81,22 @@ def main():
                 print(f"New User {first_name} {last_name}{username} {password} created")
                 print ('\n')
 
-        # elif short_code == 'dc':
+        elif short_code == 'dc':
 
-        #     if  display_credentials():
-        #         print("Here is a list of all your credentials")
-        #         print('\n')
+                            if display_credentials():
+                                    print("Here is a list of all your credentials")
+                                    print('\n')
 
-        #     for credential in return_credentials():
-        #         print(f"{credential.username} {credential.password}")
+                                    for credential in display_credentials():
+                                            print(f"{credential.website_name} {credential.username} .....{credential.password}")
 
-        #         print('\n')
-        #     else:
-        #         print('\n')
-        #         print("You dont seem to have any credentials saved yet")
-        #         print('\n')
+                                    print('\n')
+                            else:
+                                    print('\n')
+                                    print("You dont seem to have any credentials saved yet")
+                                    print('\n')
 
-        elif short_code == 'ff':
+        elif short_code == 'fd':
             
             print("username")
 
