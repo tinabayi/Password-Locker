@@ -62,10 +62,16 @@ def main():
     first_name = input()
     print( "What is your last_name")
     last_name=input()
-    print(f"{first_name},type your username")
+    print(f"{first_name} Enter your username")
     user_name=input()
     print("Your password ?")
     passward=input()
+    print("Enter  a username")
+            user_name = input()
+
+    print(f"Hi {first_name} Enter your password")
+            print('\n')
+
 if __name__ == '__main__':
 
     main()
