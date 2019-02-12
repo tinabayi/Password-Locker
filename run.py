@@ -38,11 +38,11 @@ def save_credentials(credential):
     '''
     credential.save_credentials()
 
-def check_existing_credentials(website_name):
+def check_existing_credentials(username):
     '''
-    Function that check if a credential exists with that website_name and return a Boolean
+    Function that check if a credential exists with that username and return a Boolean
     '''
-    return Credential.credential_exist(websit_name)
+    return Credential.credential_exist(username)
 def del_credential(credential):
     '''
     Function to delete a credential
@@ -97,22 +97,22 @@ def main():
 
         elif short_code == 'ff':
             
-              print("username")
+            print("username")
 
-              website_name = input()
-        if check_existing_credentials(username):
-               search_credential = find_credential(username)
-               print(f"{search_credential.username} {search_credential.password}")
-               print('-' * 20)
+            username = input()
+            if check_existing_credentials(username):
+                  search_credential = find_credential(username)
+                  print(f"{search_credential.username} {search_credential.password}")
+                  print('-' * 20)
          
-        else:
-            print("That credential does not exist")
+            else:
+                 print("That credential does not exist")
 
         elif short_code == "ex":
-               print("Bye .......")
+                 print("Bye .......")
                  break
-            else:
-               print("I really didn't get that. Please use the short codes")
+        else:
+                print("I really didn't get that. Please use the short codes")
    
 if __name__ == '__main__':
 

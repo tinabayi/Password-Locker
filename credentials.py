@@ -32,7 +32,7 @@ class Credential:
         Credential.credential_list.remove(self)
 
     @classmethod
-    def credential_exists(cls,website_name):
+    def credential_exists(cls,username):
         '''
         Method that checks if a credential exists from the credential list.
         Args:
@@ -41,7 +41,7 @@ class Credential:
             Boolean: True or false depending if the credential exists
         '''
         for credential in cls.credential_list:
-            if credential.website_name == website_name:
+            if credential.username == username:
                     return True
 
         return False
