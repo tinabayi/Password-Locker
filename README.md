@@ -9,11 +9,10 @@ BAYIZERE Christine
 ### Project Description
 ~~~
 BDD
-
-| Behavior                                                                                                                                                                                                        | user input                                 | user output |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------|-------------|
-| the application has a prompt to the user where the application ask a user to enter his first name,his last name,his username,his password and in case  those data are putted those are saved by the application | .first name .last name .password .username |             |
-|                                                                                                                                                                                                                 |                                            |             |
+| Behavior                                                                                                                                                                                                                                                                                                                         | user input                                                  | user output                                                                       |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| the application has a prompt to the user where the application ask a user to enter his first name,his last name,his username,his password and in case  those data are putted those are saved by the application to create a user account ,to  display credential account ,to find credential account and exit credential details | .cc short code .dc short code .ff short code .ex short code | .ask of first name,last name,username,password .for display credentials .for exit |
+|                                                                                                                                                                                                                                                                                                                                  |                                                             |                                                                                   |
 
 ~~~
 ### Technology used
