@@ -13,7 +13,7 @@ class Credential:
         self.username= username
         self.password= password
         self.website_name=website_name
-       contact_list = [] # Empty contact list
+      
  # Init method up here
     def save_credential(self):
 
